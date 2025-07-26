@@ -31,7 +31,7 @@ This repository includes tests and implementations for the following functions:
         length: <array length>
      }
      ```
-## 🗓 Planned Features
+## 🗓️ Planned Features
 The following functions will be implemented in future updates:
 1. **`calculator`** (object)  
    - Contains basic operations: `add`, `subtract`, `divide`, and `multiply`.  
