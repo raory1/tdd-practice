@@ -1,16 +1,11 @@
-class Object {
-  constructor(average, min, max, length) {
-    this.average = average;
-    this.min = min;
-    this.max = max;
-    this.length = length;
-  }
-}
-
 function analyzeArray(arr) {
-  average = arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
-  const newObj = new Object(average);
-  return newObj;
+  const average = arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
+  return {
+    average,
+    min: Math.min(...arr),
+    max: Math.max(...arr),
+    length: arr.length,
+  };
 }
 
 module.exports = analyzeArray;
